@@ -1,0 +1,38 @@
+package WeekOne;
+
+import java.util.Scanner;
+
+public class NameIsMine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Number of tests: ");
+		int test = sc.nextInt();
+		
+		// iterate through # of tests
+		for (int i = 1; i <= test; i++) {
+			
+			// create a string for both names
+			
+			System.out.println("What is the first name?");
+			String firstName = sc.next();
+			
+			System.out.println();
+			System.out.println("What is the next name?");
+			String secondName = sc.next();
+			
+			if (secondName.contains(firstName)) {
+				System.out.println("TRUE");
+			} else {
+				System.out.println("FALSE");
+			}
+			
+			
+		}
+
+	}
+
+}
